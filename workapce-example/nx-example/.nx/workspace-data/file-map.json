@@ -1,0 +1,118 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.6.4",
+  "deps": {
+    "nx": "^19.6.4"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "my-app": [
+        {
+          "file": "apps/my-app/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "apps/my-app/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "apps/my-app/README.md",
+          "hash": "12205685531602560652"
+        },
+        {
+          "file": "apps/my-app/next.config.mjs",
+          "hash": "6567081978241091914"
+        },
+        {
+          "file": "apps/my-app/package.json",
+          "hash": "7861721708722375574",
+          "deps": [
+            "npm:typescript",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:next",
+            "my-utils"
+          ]
+        },
+        {
+          "file": "apps/my-app/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "apps/my-app/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "apps/my-app/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/my-app/src/app/globals.css",
+          "hash": "16573379123872968227"
+        },
+        {
+          "file": "apps/my-app/src/app/layout.tsx",
+          "hash": "17471513076887563034"
+        },
+        {
+          "file": "apps/my-app/src/app/page.module.css",
+          "hash": "6975797895798679535"
+        },
+        {
+          "file": "apps/my-app/src/app/page.tsx",
+          "hash": "14589413239612560818"
+        },
+        {
+          "file": "apps/my-app/tsconfig.json",
+          "hash": "4320684160905164141"
+        }
+      ],
+      "my-utils": [
+        {
+          "file": "packages/my-utils/dist/index.d.ts",
+          "hash": "6822024585695174806"
+        },
+        {
+          "file": "packages/my-utils/dist/index.js",
+          "hash": "15224998674042195298"
+        },
+        {
+          "file": "packages/my-utils/package.json",
+          "hash": "1072856667394692445",
+          "deps": [
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "packages/my-utils/src/index.ts",
+          "hash": "11393141625710072042"
+        },
+        {
+          "file": "packages/my-utils/tsconfig.json",
+          "hash": "2447078035322182222"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": "package.json",
+        "hash": "8983205187509200250"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "2857080347929398619"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2320187736902498180"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+const b = require("b");
+
+(async function main() {
+  const users = await b();
+
+  console.log(users);
+  console.log("change!");
+})();

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "my-app#build": {
+      // build 된 결과물의 경로 및 /netx/cache 의 모든것을 제외
+      "outputs": [".next/**", "!.next/cache/**"],
+      // "^" 는 의존하고 있는 모든 것들을 Build 하겠다
+      // 즉, my-app 이 my-utils 를 의존하고 있기 떄문에 my-app 이 빌드될때
+      // my-utils 도 빌드된다. 단, 변경점이 없으면 빌드하지 않는다.
+      "dependsOn": ["^build"]
+    },
+    "my-utils#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "my-app#dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

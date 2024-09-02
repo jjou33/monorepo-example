@@ -1,0 +1,32 @@
+{
+  "run": {
+    "command": "nx build my-app --verbose",
+    "startTime": "2024-08-29T22:53:26.474Z",
+    "endTime": "2024-08-29T22:53:26.548Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "my-utils:build",
+      "target": "build",
+      "projectName": "my-utils",
+      "hash": "355253246758366837",
+      "startTime": "2024-08-29T22:53:26.477Z",
+      "endTime": "2024-08-29T22:53:26.493Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "my-app:build",
+      "target": "build",
+      "projectName": "my-app",
+      "hash": "1988849240253101654",
+      "startTime": "2024-08-29T22:53:26.494Z",
+      "endTime": "2024-08-29T22:53:26.548Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    }
+  ]
+}

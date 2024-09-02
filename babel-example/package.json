@@ -1,0 +1,19 @@
+{
+  "name": "babel-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.7.1+sha1.b0ae55d11432e1af341998848fdc219a62f7623a",
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-arrow-functions": "^7.24.7",
+    "@babel/preset-env": "^7.25.4"
+  }
+}
