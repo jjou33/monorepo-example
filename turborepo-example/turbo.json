@@ -14,6 +14,7 @@
       "outputs": ["dist/**"]
     },
     "my-app#dev": {
+        // 개발서버를 구동 시 캐시하지 않도록 설정
       "cache": false,
       "persistent": true
     }
