@@ -5,18 +5,18 @@ import dts from "vite-plugin-dts";
 export default defineConfig({
   plugins: [react(), dts({ insertTypesEntry: true })],
   build: {
-    outDir: "./dist",
     lib: {
-      entry: "./src/index.ts",
-      name: "shared-library",
+      entry: "src/index.ts",
+      name: "shell-router",
       fileName: "index",
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "react-router-dom"],
       output: {
         globals: {
           react: "React",
-          "react-dom": "ReactDOM", 
+          "react-dom": "ReactDOM",
+          "react-router-dom": "ReactRouterDOM",
         },
       },
     },

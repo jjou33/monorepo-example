@@ -62,11 +62,11 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "component_app",
+      name: "posting",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./Button": "./src/components/Button",
+        "./injector": "./src/injector.tsx",
       },
       shared: {
         ...deps,
@@ -78,20 +78,11 @@ module.exports = (_, argv) => ({
           singleton: true,
           requiredVersion: deps["react-dom"],
         },
-        "shared-library": {
+        "@career-up/shell-router": {
           singleton: true,
-        }
-      },
-      // shared: ["lodash"],
-      // shared: {
-      //   lodash: "^4.17.20",
-      // },
-      shared: {
-        lodash: {
-          requiredVersion: "4.17.20",
+        },
+        "@career-up/ui-kit": {
           singleton: true,
-          strictVersion: true,
-          shareScope: "community",
         },
       },
     }),
